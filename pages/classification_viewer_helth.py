@@ -3,9 +3,9 @@ import requests
 
 st.set_page_config(page_title="Text Sentiment", layout="centered")
 st.title("📝 Классификация отзыва (позитив/негатив)")
-st.page_link("https://my-fastapi.onrender.com/docs#/default/clf_text_clf_text_post", label="Перейти на FastAPI Классификации отзывов 🌐")
+st.page_link("https://bbarft8l8qvurtgdgu9f.containers.yandexcloud.net/docs#/default/clf_text_clf_text_post", label="Перейти на FastAPI Классификации отзывов 🌐")
 
-API_URL_TEXT = "https://my-fastapi.onrender.com/docs"  # твой FastAPI
+API_URL_TEXT = "https://bbarft8l8qvurtgdgu9f.containers.yandexcloud.net/docs"  # твой FastAPI
 
 def send_text_to_api(text: str):
     r = requests.post(API_URL_TEXT, json={"text": text}, timeout=15)
