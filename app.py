@@ -6,9 +6,9 @@ import mimetypes
 
 st.set_page_config(page_title="Weather Classification", layout="centered")
 st.title("🌤️ Классификация погодных условий по фото")
-st.page_link("https://my-fastapi.onrender.com/docs#/default/classify_image_clf_weather_post/", label="Перейти на FastAPI Weather Classification 🌐")
+st.page_link("https://bbarft8l8qvurtgdgu9f.containers.yandexcloud.net/docs#/default/classify_image_clf_weather_post/", label="Перейти на FastAPI Weather Classification 🌐")
 
-API_URL = "https://my-fastapi.onrender.com/docs"
+API_URL = "https://bbarft8l8qvurtgdgu9f.containers.yandexcloud.net/docs"
 
 def send_to_api(image_bytes, filename, content_type):
     files = {"file": (filename, image_bytes, content_type)}  # <-- важен 3-й аргумент!
